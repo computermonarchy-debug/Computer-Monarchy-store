@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Monarchy - AI Android Apps in Ghana</title>
+<meta name="description" content="Custom Android apps cheaper than agencies. Monarchy AI gives instant quotes. No app = No money. Accra, Ghana.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+body{font-family:Inter} html{scroll-behavior:smooth}
+.chat-msg{animation:slideUp 0.3s}
+@keyframes slideUp{from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body class="bg-gray-50">
+
+<script>
+const CONFIG = {
+name: "Kwame",
+momo: "020690867",
+momoName: "KWAME COMPUTER",
+email: "computermonarchy@gmail.com",
+formspree: "https://formspree.io/f/xrevoqbd",
+whatsapp: "+23320690867"
+};
+
+const PRICING = {
+simple: {min: 1500, max: 3000, days: "3-5"},
+medium: {min: 3500, max: 7000, days: "7-14"},
+complex: {min: 7500, max: 15000, days: "14-21"}
+};
+</script>
+
+<header class="bg-[#0A2540] text-white sticky top-0 z-40 shadow">
+<div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="text-2xl">👑</span>
+<h1 class="text-xl font-black">Computer Monarchy</h1>
+</div>
+<a href="https://wa.me/23320690867" target="_blank" class="bg-green-600 px-4 py-2 rounded-lg text-sm font-bold">WhatsApp 020690867</a>
+</div>
+</header>
+
+<section class="bg-gradient-to-br from-[#0A2540] to-[#6C5CE7] text-white py-24">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<div class="text-6xl mb-4">👑</div>
+<h1 class="text-4xl md:text-6xl font-black mb-4">Custom Android Apps</h1>
+<p class="text-xl font-bold mb-4">Cheaper + Smarter with AI</p>
+<p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto">Agencies charge GH₵20,000+. I use AI tools to build 40% faster. You save 60%. No app = No money.</p>
+<button onclick="openChat()" class="bg-white text-[#0A2540] px-10 py-4 rounded-xl font-black text-lg shadow-2xl hover:scale-105 transition">Chat Monarchy AI → Get Quote</button>
+<p class="text-sm mt-4 opacity-80">⚡ Instant estimate → Kwame confirms in 2hrs</p>
+</div>
+</section>
+
+<section class="py-16 bg-white">
+<div class="max-w-5xl mx-auto px-4">
+<h2 class="text-3xl font-black text-center mb-12 text-[#0A2540]">How It Works</h2>
+<div class="grid md:grid-cols-4 gap-6">
+<div class="bg-blue-50 p-6 rounded-2xl text-center">
+<div class="text-5xl mb-3">🤖</div>
+<h3 class="font-bold text-lg mb-2">1. Chat AI</h3>
+<p class="text-gray-600 text-sm">Get price range in 30 seconds</p>
+</div>
+<div class="bg-purple-50 p-6 rounded-2xl text-center">
+<div class="text-5xl mb-3">✅</div>
+<h3 class="font-bold text-lg mb-2">2. Get Approval</h3>
+<p class="text-gray-600 text-sm">Kwame sends exact price + MoMo</p>
+</div>
+<div class="bg-green-50 p-6 rounded-2xl text-center">
+<div class="text-5xl mb-3">💳</div>
+<h3 class="font-bold text-lg mb-2">3. Pay 50%</h3>
+<p class="text-gray-600 text-sm">Test APK before balance</p>
+</div>
+<div class="bg-yellow-50 p-6 rounded-2xl text-center">
+<div class="text-5xl mb-3">📦</div>
+<h3 class="font-bold text-lg mb-2">4. Get Code</h3>
+<p class="text-gray-600 text-sm">Full source code is yours</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 bg-gray-50">
+<div class="max-w-5xl mx-auto px-4">
+<h2 class="text-3xl font-black text-center mb-4 text-[#0A2540]">AI-Powered Pricing</h2>
+<p class="text-center text-gray-600 mb-10">High-end code. Fair price.</p>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-white border-2 rounded-2xl p-8">
+<h3 class="font-black text-xl mb-2">Simple App</h3>
+<p class="text-4xl font-black text-[#6C5CE7] mb-2">GH₵1,500 - 3,000</p>
+<p class="text-sm text-gray-600 mb-4 font-semibold">3-5 days</p>
+<p class="text-sm text-gray-500">Calculator, notes, basic forms</p>
+</div>
+<div class="bg-white border-2 border-[#6C5CE7] rounded-2xl p-8 shadow-2xl relative">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#6C5CE7] text-white text-xs font-black px-4 py-1 rounded-full">POPULAR</div>
+<h3 class="font-black text-xl mb-2">Medium App</h3>
+<p class="text-4xl font-black text-[#6C5CE7] mb-2">GH₵3,500 - 7,000</p>
+<p class="text-sm text-gray-600 mb-4 font-semibold">7-14 days</p>
+<p class="text-sm text-gray-500">Chatbot, booking, MoMo SMS, login</p>
+</div>
+<div class="bg-white border-2 rounded-2xl p-8">
+<h3 class="font-black text-xl mb-2">Complex App</h3>
+<p class="text-4xl font-black text-[#6C5CE7] mb-2">GH₵7,500 - 15,000</p>
+<p class="text-sm text-gray-600 mb-4 font-semibold">14-21 days</p>
+<p class="text-sm text-gray-500">Delivery, e-commerce, GPS, admin</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 bg-[#0A2540] text-white">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-black mb-8">Why Trust Computer Monarchy?</h2>
+<div class="grid md:grid-cols-3 gap-6 text-left">
+<div class="bg-white/10 p-6 rounded-xl">
+<h4 class="font-bold text-lg mb-2">🛡️ No App = No Money</h4>
+<p class="text-sm opacity-90">Test APK first. Pay balance after approval.</p>
+</div>
+<div class="bg-white/10 p-6 rounded-xl">
+<h4 class="font-bold text-lg mb-2">📍 Accra, Ghana</h4>
+<p class="text-sm opacity-90">Real developer. WhatsApp 020690867.</p>
+</div>
+<div class="bg-white/10 p-6 rounded-xl">
+<h4 class="font-bold text-lg mb-2">💾 Source Code</h4>
+<p class="text-sm opacity-90">Full Flutter code + 1 month support.</p>
+</div>
+</div>
+<div class="mt-8 bg-yellow-500/20 p-4 rounded-xl">
+<p class="text-sm font-semibold">50% upfront via MoMo 020690867. Balance after APK approval.</p>
+</div>
+</div>
+</section>
+
+<div id="chatWidget" class="hidden fixed bottom-4 right-4 w-96 max-w- h-[550px] bg-white rounded-2xl shadow-2xl z-50 flex-col border-2 border-[#6C5CE7]">
+<div class="bg-gradient-to-r from-[#0A2540] to-[#6C5CE7] text-white p-4 rounded-t-2xl flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="text-xl">👑</span>
+<div><h3 class="font-black">Monarchy AI</h3><p class="text-xs opacity-80">Online</p></div>
+</div>
+<button onclick="closeChat()" class="text-2xl">×</button>
+</div>
+<div id="chatBox" class="flex-1 p-4 overflow-y-auto space-y-3 bg-gray-50"></div>
+<div class="p-4 border-t bg-white rounded-b-2xl">
+<input id="chatInput" type="text" placeholder="Describe your app idea..." class="w-full border-2 rounded-lg px-4 py-3 mb-2 focus:border-[#6C5CE7] outline-none">
+<button onclick="sendMsg()" class="w-full bg-[#6C5CE7] text-white py-3 rounded-lg font-black">Send →</button>
+</div>
+</div>
+
+<button onclick="openChat()" id="chatBtn" class="fixed bottom-4 right-4 bg-[#6C5CE7] text-white w-16 h-16 rounded-full shadow-2xl text-2xl z-40 hover:scale-110 transition">💬</button>
+
+<form id="aiForm" action="https://formspree.io/f/xrevoqbd" method="POST" class="hidden">
+<input name="idea"><input name="users"><input name="features"><input name="tier"><input name="estimate"><input name="timeline"><input name="email"><input name="whatsapp">
+</form>
+
+<footer class="py-10 text-center text-gray-500 text-sm bg-white border-t">
+<div class="flex items-center justify-center gap-2 mb-2"><span class="text-xl">👑</span><p class="font-black text-[#0A2540]">Computer Monarchy</p></div>
+<p>Kwame | Android Developer | Accra, Ghana</p>
+<p class="mt-2">Mo: 020690867</p>
+<p class="mt-4 text-xs">© 2026 Computer Monarchy</p>
+</footer>
+
+<script>
+let chatStep = 0;
+let chatData = {};
+
+function openChat(){
+document.getElementById('chatWidget').classList.remove('hidden');
+document.getElementById('chatBtn').classList.add('hidden');
+if(chatStep === 0){
+addMsg("👑 Hi! I'm Monarchy AI. I quote high-end apps cheaper.", 'ai');
+setTimeout(()=>addMsg("What's your app idea? Example: 'Uber for plumbers'", 'ai'), 600);
+chatStep = 1;
+}
+}
+
+function closeChat(){
+document.getElementById('chatWidget').classList.add('hidden');
+document.getElementById('chatBtn').classList.remove('hidden');
+}
+
+function addMsg(text, sender){
+let div = document.createElement('div');
+div.className = 'chat-msg ' + (sender==='ai'? 'text-left' : 'text-right');
+div.innerHTML = `<span class="inline-block px-4 py-3 rounded-xl max-w-[85%] shadow ${sender==='ai'? 'bg-white border' : 'bg-[#6C5CE7] text-white'} font-medium">${text.replace(/\n/g,'<br>')}</span>`;
+document.getElementById('chatBox').appendChild(div);
+document.getElementById('chatBox').scrollTop = document.getElementById('chatBox').scrollHeight;
+}
+
+document.getElementById('chatInput').addEventListener('keypress', e=>{
+if(e.key==='Enter') sendMsg();
+});
+
+function sendMsg(){
+let input = document.getElementById('chatInput');
+let msg = input.value.trim();
+if(!msg) return;
+addMsg(msg, 'user');
+input.value = '';
+
+setTimeout(()=>{
+if(chatStep === 1){
+chatData.idea = msg;
+addMsg("Got it 👍 Who will use this app?", 'ai');
+chatStep = 2;
+}
+else if(chatStep === 2){
+chatData.users = msg;
+addMsg("List 3 must-have features. Example: Login, MoMo payment, Chat", 'ai');
+chatStep = 3;
+}
+else if(chatStep === 3){
+chatData.features = msg;
+let tier = 'simple';
+let features = msg.toLowerCase();
+if(features.includes('payment') || features.includes('chat') || features.includes('booking') || features.includes('momo') || features.includes('login')){
+tier = 'medium';
+}
+if(features.includes('gps') || features.includes('delivery') || features.includes('ecommerce') || features.includes('ai') || features.includes('admin')){
+tier = 'complex';
+}
+let price = PRICING;
+chatData.tier = tier;
+chatData.estimate = `GH₵${price.min.toLocaleString()} - ${price.max.toLocaleString()}`;
+chatData.timeline = price.days;
+addMsg(`Analysis complete ✅ This is a ${tier} app.`, 'ai');
+setTimeout(()=>{
+addMsg(`Estimated: ${chatData.estimate}\nTimeline: ${price.days} days\nAI helps Kwame build 40% faster = you save 60%`, 'ai');
+setTimeout(()=>{
+addMsg("Kwame will send exact price + MoMo 020690867 to your WhatsApp in 2 hours. What's your WhatsApp number?", 'ai');
+chatStep = 4;
+}, 1200);
+}, 800);
+}
+else if(chatStep === 4){
+chatData.whatsapp = msg;
+addMsg("Last step: Your email for official quote?", 'ai');
+chatStep = 5;
+}
+else if(chatStep === 5){
+chatData.email = msg;
+addMsg("All done! Brief sent. Redirecting...", 'ai');
+setTimeout(()=>{
+document.querySelector('#aiForm input[name=idea]').value = chatData.idea;
+document.querySelector('#aiForm input[name=users]').value = chatData.users;
+document.querySelector('#aiForm input[name=features]').value = chatData.features;
+document.querySelector('#aiForm input[name=tier]').value = chatData.tier;
+document.querySelector('#aiForm input[name=estimate]').value = chatData.estimate;
+document.querySelector('#aiForm input[name=timeline]').value = chatData.timeline;
+document.querySelector('#aiForm input[name=email]').value = chatData.email;
+document.querySelector('#aiForm input[name=whatsapp]').value = chatData.whatsapp;
+document.getElementById('aiForm').submit();
+setTimeout(()=>{window.location.href = 'thankyou.html';}, 1500);
+}, 1500);
+}
+}, 700);
+}
+</script>
+
+</body></html>
