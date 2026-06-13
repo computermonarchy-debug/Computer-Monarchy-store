@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Portal - Computer Monarchy</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>body{font-family:Inter}</style>
+</head>
+<body class="bg-gray-50">
+<header class="bg-[#0A2540] text-white py-4 shadow">
+<div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+<div class="flex items-center gap-2"><span class="text-2xl">👑</span><h1 class="font-black text-xl">Client Portal</h1></div>
+<a href="index.html" class="text-sm opacity-80">← Home</a>
+</div>
+</header>
+<section class="py-12">
+<div class="max-w-3xl mx-auto px-4 space-y-6">
+<div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-blue-500">
+<h2 class="text-2xl font-black mb-4 text-[#0A2540]">Step 1: Pay 50% Upfront</h2>
+<div class="bg-blue-50 p-5 rounded-xl mb-4">
+<p class="text-sm mb-2 font-medium">After Kwame sends exact price, pay to:</p>
+<p class="text-2xl font-black text-[#0A2540]">Mo Number: 020690867</p>
+<p class="text-lg font-bold">Account Name: KWAME COMPUTER</p>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-500">
+<h2 class="text-2xl font-black mb-4 text-[#0A2540]">Step 2: Submit Payment Proof</h2>
+<form action="https://formspree.io/f/xrevoqbd" method="POST" enctype="multipart/form-data" class="space-y-4">
+<label class="block text-sm font-black">Your Email *</label>
+<input type="email" name="email" required class="w-full border-2 rounded-lg px-4 py-3">
+<label class="block text-sm font-black">WhatsApp Number *</label>
+<input type="tel" name="whatsapp" required class="w-full border-2 rounded-lg px-4 py-3">
+<label class="block text-sm font-black">App Name *</label>
+<input type="text" name="app_name" required class="w-full border-2 rounded-lg px-4 py-3">
+<label class="block text-sm font-black">Amount Paid GH₵ *</label>
+<input type="number" name="amount" required class="w-full border-2 rounded-lg px-4 py-3">
+<label class="block text-sm font-black">Last 4 digits of MoMo *</label>
+<input type="text" name="last4" required maxlength="4" class="w-full border-2 rounded-lg px-4 py-3">
+<label class="block text-sm font-black">Payment Screenshot *</label>
+<input type="file" name="screenshot" accept="image/*" required class="w-full border-2 rounded-lg px-4 py-3">
+<input type="hidden" name="type" value="payment_proof">
+<button type="submit" class="w-full bg-green-600 text-white py-4 rounded-xl font-black text-lg">I Paid → Start Building</button>
+</form>
+</div>
+<div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-yellow-500">
+<h2 class="text-2xl font-black mb-4 text-[#0A2540]">Step 3: App Delivery</h2>
+<p class="text-sm text-gray-600">Status: Waiting for payment proof. After balance, backup link appears here.</p>
+</div>
+</div>
+</section>
+</body></html>
